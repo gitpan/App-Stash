@@ -1,0 +1,36 @@
+---
+name: App-Stash
+version: 0.01
+author:
+  - 'Jozef Kutej <jkutej@cpan.org>'
+abstract: persistant application data storage
+license: perl
+resources:
+  bugtracker: http://github.com/jozef/App-Stash/issues
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/jozef/App-Stash.git
+build_requires:
+  File::Temp: 0
+  Test::Differences: 0
+  Test::Exception: 0
+  Test::More: 0
+requires:
+  File::HomeDir: 0
+  File::Path: 0
+  JSON::Util: 0
+  Path::Class: 0
+configure_requires:
+  Module::Build: 0.35
+provides:
+  App::Stash:
+    file: lib/App/Stash.pm
+    version: 0.01
+generated_by: Module::Build version 0.35
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+keywords:
+  - application
+  - data
+  - storage
+  - persistant
